@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCode Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" placeholder="Enter text or URL" id="QR-input">
+    <div id="qr-code">
+      <p>Enter a URL or text above, then click Generate to see your QR code!</p>
+    </div>
+    <div class="buttons">
+        <button id="download-btn">Download</button>
+        <button id="generate-btn">Generate QR code</button>
+        <button id="reset-btn">Reset</button>
+    </div>
+   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="script.js"></script>
+</html>
