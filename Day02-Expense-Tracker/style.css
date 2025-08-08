@@ -1,0 +1,100 @@
+body{
+    background-color: #1E293B;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: 	#14B8A6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.balance{
+    margin-bottom: 1rem;
+}
+.balance, .income-container, .expense-container{
+    display: flex;
+    font-size: 1.3rem;
+    gap: .5rem;
+}
+.income-expense{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(252, 243, 243, 0.178);
+}
+#income-amount{
+    color: rgb(7, 153, 7);
+    
+
+}
+#expense-amount{
+    color: rgb(185, 15, 15);
+}
+.history-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E293B;
+    padding: .3rem;
+    padding-inline: .5rem;
+    box-shadow: 0 1px 3px rgba(252, 243, 243, 0.178);
+    margin-top: 1rem;
+}
+.history-item .remove-btn{
+    color: red;
+    border-radius: 50%;
+    padding: .1rem;
+    text-align: center;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+}
+.history-item p{
+    flex: 1;
+    margin-left: 1rem;
+}
+.income{
+    color: rgb(7, 153, 7);
+}
+.expense{
+    color: rgb(185, 15, 15);
+}
+.transaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.transaction hr{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+label{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+input{
+    margin-bottom: 1rem;
+    padding: .5rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+button{
+    padding: 1rem;
+    background-color: #14B8A6;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+hr{
+   border-color: #ffffff1a;
+}
