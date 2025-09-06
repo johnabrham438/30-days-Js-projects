@@ -14,6 +14,7 @@ function preloadImage(url, callback) {
   img.src = url;
   img.onload = () => callback();
 }
+//Random background image 
 async function setRandomBackground() {
     const page =  Math.floor(Math.random() * 100) + 1;
     const url = `https://api.pexels.com/v1/search?query=${query}&per_page=1&page=${page}`;
@@ -34,6 +35,7 @@ async function setRandomBackground() {
         console.error("No photo found");
     }
 }
+// fetch the quote
 async function fetchQuote() {
   try {
     quoteEl.textContent = "Loading...";
@@ -56,6 +58,7 @@ async function fetchQuote() {
     console.error(error);
   }
 }
+// Save the quote using html2Canvas
 async function saveQuote() {
   const quoteContainer = document.getElementById('quote-container');
   const bgImage = quoteContainer.style.backgroundImage.replace(/url\(['"]?(.*?)['"]?\)/i, '$1');
@@ -73,6 +76,7 @@ async function saveQuote() {
     console.error('Image failed to load or cross-origin error', err);
   }
 }
+// reset the content
 function resetContent(){
   quoteEl.textContent = defaultContent;
   resetBtn.style.display = "none";
@@ -81,6 +85,7 @@ function resetContent(){
   document.getElementById("quote-container").style.background = "none";
 
 }
+// add event listener for the buttons 
 generateBtn.addEventListener('click',() => {
     fetchQuote();
     setRandomBackground();
