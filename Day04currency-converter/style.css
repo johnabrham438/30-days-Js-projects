@@ -1,0 +1,118 @@
+/* General page style */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #dbeafe, #fce7f3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Card container */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  margin: 1rem;
+}
+
+/* Title */
+.container h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+#from-currency-label {
+  color: #2563eb; /* blue */
+  font-weight: bold;
+}
+
+#to-currency-label {
+  color: #059669; /* green */
+  font-weight: bold;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Inputs + selects */
+input[type="number"],
+select {
+  border: none;
+  font-size: 1.2rem;
+}
+
+input{
+    width: 100%;
+}
+
+select{
+    cursor: pointer;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+/* Layout groups */
+.Amount-from,
+.Conveted-mount-to {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: border 0.2s;
+}
+
+/* Swap button */
+.reverse {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#swap-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background: #f3f4f6;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#swap-btn:hover {
+  background: #e5e7eb;
+}
+
+/* Convert button */
+#convert-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#convert-btn:hover {
+  background: #1d4ed8;
+}
