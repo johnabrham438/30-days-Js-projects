@@ -1,0 +1,75 @@
+body{
+    background-color: #171718;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#timer{
+    font-size: 10rem;
+    color: white;
+}
+.session-options{
+    margin-top: 3rem;
+    text-align: center;
+}
+button{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: 15rem;
+    border-radius: 1rem;
+    background-color: #5c5b5b41;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+}
+button span{
+    font-size: medium;
+}
+#focus-btn{
+    border-color: #ba4949;
+}
+#focus-btn span{
+    color: #ba4949;
+}
+#short-break-btn{
+    border-color: #38858a;
+}
+#short-break-btn span{
+    color: #38858a;
+}
+#long-break-btn{
+    border-color: #397097;
+}
+#long-break-btn span{
+    color: #397097;
+}
+#start-btn{
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+
+  button {
+    width: 24rem;
+    padding: 1rem;  
+  }
+  body{
+    overflow: visible;
+  }
+}
