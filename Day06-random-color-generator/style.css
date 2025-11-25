@@ -1,0 +1,105 @@
+ body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    text-align: center; 
+    display: grid;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+.colors{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+.color-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.color-box span{
+    cursor: pointer;
+}
+.color-box span:hover{
+    color: white;
+}
+.color-box span:active{
+    color: black;
+}
+
+.colorInfo{
+    color: #1d1a1a;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#box-1{
+    background-color: #ff6b6b;
+}
+#box-2{
+    background-color: #4ccdc4;
+}
+   
+#box-3{
+    background-color: #566371;
+}
+button{
+    position: absolute;
+    bottom: 50px;
+    padding: 20px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: .7rem;
+    color: white;
+    cursor: pointer;
+
+}   
+button:hover {
+  background-color: rgba(255, 255, 255, 0.418);
+  bottom: 53px;
+  transition: ease-in-out .1s;
+}
+button:active{
+    background-color: rgba(255, 255, 255, 0.123);
+}
+
+#copyDialog {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  background: rgba(15, 14, 14, 0.322);
+  backdrop-filter: blur(10px);
+  color: white;
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  70% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media (max-width: 600px) {
+
+    .colors{
+        flex-direction: column;
+    }
+    button{
+        bottom: 10px;
+    }
+    button:hover{
+        bottom: 1px;
+    }
+  
+}
+
+

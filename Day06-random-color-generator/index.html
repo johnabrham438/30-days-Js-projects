@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3a8.png" type="image/png" />
+<body>
+    <div class="colors">
+        <div class="color-box" id="box-1">
+            <p class="colorInfo" >Hex: <span id="hex1" onclick="copyText('hex1')">#FF6B6B</span></p>
+            <p class="colorInfo" >RGB: <span id="rgb1" onclick="copyText('rgb1')">rgb(255, 107, 107)</span></p>
+            <p class="colorInfo" >HSL: <span id="hsl1" onclick="copyText('hsl1')">hsl(0, 100%, 71%)</span></p>
+        </div>
+        <div class="color-box" id="box-2">
+            <p class="colorInfo" >Hex: <span id="hex2" onclick="copyText('hex2')">#4ccdc4</span></p>
+            <p class="colorInfo" >RGB: <span id="rgb2" onclick="copyText('rgb2')">rgb(76, 205, 196)</span></p>
+            <p class="colorInfo" >HSL: <span id="hsl2" onclick="copyText('hsl2')">hsl(176, 56%, 55%)</span></p>
+        </div>
+        <div class="color-box" id="box-3">
+            <p class="colorInfo" >Hex: <span id="hex3" onclick="copyText('hex3')">#556270</span></p>
+            <p class="colorInfo" >RGB: <span id="rgb3" onclick="copyText('rgb3')">rgb(85, 98, 112)</span></p>
+            <p class="colorInfo" >HSL: <span id="hsl3" onclick="copyText('hsl3')">hsl(211, 14%, 39%</span></p>
+        </div>
+    </div>
+    <button id="generateBtn">Generate color</button>
+
+    <dialog id="copyDialog">
+        <p>Copied!</p>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
