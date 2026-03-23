@@ -119,5 +119,4 @@ calculateBtn.addEventListener("click", () => {
     }
     
 })
-
 clearCalculator.addEventListener('click', clearInput);
