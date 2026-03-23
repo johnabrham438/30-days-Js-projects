@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+
+    <div class="calculator-header">
+      <h1 class="calculator-title">Mortgage Calculator</h1>
+      <span class="calculator-clear">Clear All</span>
+    </div>
+
+    <div class="form-group">
+      <label for="mortgage-amount">Mortgage Amount</label>
+
+      <div class="input-group" id="amount-group">
+        <span class="input-prefix">€</span>
+        <input type="number" id="mortgage-amount">
+      </div>
+       <span class="error-text" id="amount-error">This feild is required</span>
+    </div>
+
+    <div class="form-row">
+
+      <div class="form-group">
+        <label for="mortgage-term">Mortgage Term</label>
+
+        <div class="input-group" id="term-group">
+          <input type="number" id="mortgage-term">
+          <span class="input-suffix" id="term-suffix">years</span>
+        </div>
+        <span class="error-text" id="term-error">This feild is required</span>
+      </div>
+
+      <div class="form-group">
+        <label for="interest-rate">Interest Rate</label>
+
+        <div class="input-group" id="rate-group">
+          <input type="number" id="interest-rate">
+          <span class="input-suffix" id="interest-suffix">%</span>
+        </div>
+        <span class="error-text" id="rate-error">This feild is required</span>
+      </div>
+
+    </div>
+
+    <div class="mortgage-type">
+      <label>Mortgage Type</label>
+
+      <div class="input-group">
+        <label>
+         <input type="radio" name="mortgage-type" id="repayment">
+         Repayment
+        </label>
+      </div>
+
+     <div class="input-group">
+        <label>
+         <input type="radio" name="mortgage-type" id="interest-only">
+         Interest Only
+        </label>
+      </div>
+      <span class="error-text" id="type-error">This feild is required</span>
+
+    </div>
+
+    <button class="calculator-button">
+      <img src="assets/images/icon-calculator.svg">
+      Calculate Repayments
+    </button>
+
+  </div>
+  <div class="result">
+      <div class="result-empty">
+        <img src="assets/images/illustration-empty.svg" alt="empty-illustration">
+        <h2>Results shown here</h2>
+        <p>
+          Complete the form and click "calculate repayments" to <br>
+          see what your monthly repayments would be.
+        </p>
+      </div>
+      <div class="result-completed">
+        <h1>Your results</h1>
+        <p>
+          Your results are shown below based on teh information <br>
+          you provided. To adjust the results. edit the form and <br>
+          click "calculate repayments" again. 
+        </p>
+        <div class="result-completed-box">
+          <span>Your monthly repayments</span>
+          <h1 class="monthly-repayment" >€0.00</h1>
+          <hr>
+          <span>Total you'll repay over the term</span>
+          <h2 class="total-repayment" >€0.00</h2>
+        </div>
+      </div>
+  </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
